@@ -1,5 +1,8 @@
 # Eabsen React/JSX Style Guide
 
+## Available in other language
+-[Indonesia](./react.id.md)
+
 *A mostly reasonable approach to React and JSX*
 based on  [AirBnb Style Guide ](https://github.com/airbnb/javascript/blob/master/react/README.md).
 

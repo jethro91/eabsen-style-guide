@@ -8,7 +8,7 @@
 
 ## Style Guide index
 - javascript
-  - [Reactjs](./javascript/REACT.md)
+  - [Reactjs](./javascript/react.md)
 
 
 ## Code consistency
