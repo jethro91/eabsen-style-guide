@@ -89,7 +89,7 @@
 
   import {connect} from 'react-redux';
 
-  Vonst makeMapActionsToProps = Object.assign({}, routerActions);
+  const makeMapActionsToProps = Object.assign({}, routerActions);
 
   const makeMapStateToProps = () => {
     const mapStateToProps = (state, props) => {
