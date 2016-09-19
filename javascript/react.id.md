@@ -550,4 +550,4 @@ Modifikasi Berdaskan prinsip development perusahaan kami.
   [anti-pattern]: https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html
 
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#daftar-isi)**

@@ -1,11 +1,13 @@
-# Eabsen React/JSX Style Guide
+# Eabsen React/JSX Redux Es Style Guide
 
-*CheatSheet React-Redux shema ES6*
+*CheatSheet unuk React-Redux shema ES6*
 
 ## Daftar Isi
 
   1. [Skeleton](#skeleton)
   1. [Tipe PropTypes](#tipe-proptypes)
+  1. [Map Array](#map-array)
+  1. [Map Object](#map-object)
 
 ## Skeleton
 
@@ -39,7 +41,7 @@
     }
     shouldComponentUpdate(nextProps, nextState) {
       //optional
-      return this,props !== nextProps
+      return this.props !== nextProps
     }
     componentWillUpdate(nextProps, nextState) {
       //optional
@@ -175,3 +177,69 @@
   };
 
   ```
+
+## Map Array
+
+```jsx
+  render(){
+    //contoh data
+    let listDataArr = [
+      {
+        id: '1',
+        name: 'Tifa'
+      },
+      {
+        id: '2',
+        name: 'Rinoa'
+      }
+    ];
+
+    return(
+
+      {listDataArr.map((item) => {
+        return(
+          <div key={item.id}>
+            ID : {item.id}
+            Value: {item.name}
+          </div>
+          );
+      })}
+
+    );
+  }
+
+
+
+```
+
+## Map Object
+
+```jsx
+  render(){
+    //contoh data
+    let listDataObj = {
+      '1': {
+        name: 'Tifa'
+      },
+      '2': {
+        name: 'Rinoa'
+      }
+    };
+
+    return(
+
+      {Object.keys(listDataObj).map((key) => {
+        return (
+          <div key={key}>
+            ID: {key}
+            Value: {listDataObj[key].name}
+          </div>
+        );
+      })}
+
+    );
+  }
+
+```
+
+**[⬆ back to top](#daftar-isi)**
