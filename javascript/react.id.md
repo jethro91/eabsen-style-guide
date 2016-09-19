@@ -462,7 +462,6 @@ Modifikasi Berdaskan prinsip development perusahaan kami.
 
   - Urutan dalam `class extends React.Component`:
 
-  1. optional `static` methods
   1. `constructor`
   1. `getChildContext`
   1. `componentWillMount`
@@ -483,16 +482,22 @@ Modifikasi Berdaskan prinsip development perusahaan kami.
     import React, { PropTypes } from 'react';
 
     class Link extends React.Component {
-      static methodsAreOk() {
-        return true;
-      }
 
+      constructor(props) {
+        super(props);
+        this.state = {};
+        this.upperCaseText = this.upperCaseText.bind(this);
+      }
+      upperCaseText(text){
+        return text.toUpperCase();
+      }
       render() {
-        return <a href={this.props.url} data-id={this.props.id}>{this.props.text}</a>
+        return <a href={this.props.url} data-id={this.props.id}>{upperCaseText(this.props.text)}</a>
       }
     }
 
-    // Posisi deklarasi setelah deklarasi class untuk mempermudah pengecheckan type jika menggunakan 'connect'-nya Redux
+    // Posisi deklarasi setelah deklarasi class  
+    // untuk mempermudah pengecheckan type jika menggunakan 'connect'-nya Redux
 
     Link.propTypes = {
       id: PropTypes.number.isRequired,
@@ -502,6 +507,8 @@ Modifikasi Berdaskan prinsip development perusahaan kami.
     Link.defaultProps = {
       text: 'Hello World',
     };
+
+    //Import dan 'connect' Redux disini
 
     export default Link;
     ```
