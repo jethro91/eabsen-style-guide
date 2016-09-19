@@ -492,7 +492,11 @@ Modifikasi Berdaskan prinsip development perusahaan kami.
         return text.toUpperCase();
       }
       render() {
-        return <a href={this.props.url} data-id={this.props.id}>{upperCaseText(this.props.text)}</a>
+        return (
+          <a href={this.props.url} data-id={this.props.id}>
+            {this.upperCaseText(this.props.text)}
+          </a>
+        );
       }
     }
 
