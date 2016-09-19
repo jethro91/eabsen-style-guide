@@ -8,7 +8,8 @@
 
 ## Style Guide index
 - javascript
-  - [Reactjs](./javascript/react.md)
+  - [Reactjs](./javascript/react.id.md)
+  - [React-Redux CheatSheet](./javascript/react-redux-cheatsheet.id.md)
 
 
 ## Code consistency
