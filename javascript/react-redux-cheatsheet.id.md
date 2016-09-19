@@ -1,4 +1,4 @@
-# Eabsen React/JSX Redux Es Style Guide
+# Eabsen React/JSX Redux ES6 Cheat Sheet
 
 *CheatSheet unuk React-Redux shema ES6*
 
